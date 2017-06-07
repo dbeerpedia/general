@@ -8,7 +8,7 @@ Streven is om alles via Github te doen. Om te participeren dien je dan ook een (
 Onder "Issues" (https://github.com/dbeerpedia/general/issues) kan gediscussieerd worden over issues of kunnen er nieuwe issues aangemaakt worden.
 
 ## Chat via Slack
-Voor snelle onderlinge communicatie is er een Slack account aangemaakt: https://dbeerpedia.slack.com. Slack is een multi-channel chat applicatie met handige integratie mogelijkheden voor met name developers. Via https://join.slack.com/dbeerpedia/signup kun je je in het gesprek mengen. Mocht je geen e-mailadres op één van de verkiesbare domeinen hebben, neem dan contact op met @dvh zodat het domein toegevoegd kan worden of een persoonlijke uitnodiging verstuurd kan worden.
+Voor snelle onderlinge communicatie is er een Slack account aangemaakt: https://dbeerpedia.slack.com. Slack is een multi-channel chat applicatie met handige integratie mogelijkheden voor met name developers. Via https://join.slack.com/dbeerpedia/signup kun je je in het gesprek mengen. Mocht je geen e-mailadres op één van de verkiesbare domeinen hebben, neem dan contact op met [@dvh](https://github.com/dvh) zodat het domein toegevoegd kan worden of een persoonlijke uitnodiging verstuurd kan worden.
 
 ## Wijzigingen aanbrengen
 Om wijzigingen aan de code door te voeren dien je een zogenaamde "pull request" (PR) te maken. Als je bijvoorbeeld deze tekst wilt wijzigen (staat in het bestand README.md en is derhalve ook code) dien je de volgende stappen te volgen:
