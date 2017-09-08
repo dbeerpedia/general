@@ -6,9 +6,6 @@
     "categorie": {
       "@type": "@vocab"
     },
-    "groep": {
-      "@type": "@vocab"
-    },
     "kvk": "schema:taxID",
     "telefoon": "schema:telephone",
     "url": {
