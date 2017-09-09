@@ -1,0 +1,458 @@
+@prefix :      <http://dbeerpedia.com/style/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+:beer-styles  a             skos:ConceptScheme ;
+        skos:hasTopConcept  :beer ;
+        skos:prefLabel      "Beer styles taxonomy" ;
+        foaf:image          <https://cdn.shopify.com/s/files/1/0099/5342/files/P-BrewDeluxe_Zoom.jpg?1349> .
+
+:stout-porter  a        skos:Concept ;
+        skos:broader    :ale ;
+        skos:narrower   :oatmeal-stout , :sweet-stout , :american-porter , :flavored-stout , :english-porter , :baltic-porter , :imperial-stout , :american-stout , :irish-stout ;
+        skos:prefLabel  "Stout / porter" .
+
+:german-ale  a          skos:Concept ;
+        skos:broader    :ale ;
+        skos:narrower   :kolsch , :altbier , :weissbier , :roggenbier ;
+        skos:prefLabel  "German ale" .
+
+:india-pale-ale  a      skos:Concept ;
+        skos:broader    :pale-ale ;
+        skos:narrower   :double-ipa , :black-ipa ;
+        skos:prefLabel  "India pale ale" .
+
+:weissbier  a           skos:Concept ;
+        skos:broader    :german-ale ;
+        skos:narrower   :berliner-weisse , :kristallweizen , :weizenbock , :dunkelweizen , :gose , :hefeweizen ;
+        skos:prefLabel  "Weissbier" .
+
+:lager  a               skos:Concept ;
+        skos:broader    :beer ;
+        skos:narrower   :altbier , :cream-ale , :kolsch , :american-lager , :pilsner , :baltic-porter , :german-lager , :european-lager ;
+        skos:prefLabel  "Lager" .
+
+:american-porter  a     skos:Concept ;
+        skos:broader    :stout-porter ;
+        skos:prefLabel  "American porter" .
+
+:amber-ale  a           skos:Concept ;
+        skos:broader    :american-pale-ale ;
+        skos:prefLabel  "Amber ale" .
+
+:belgian-dark-ale  a    skos:Concept ;
+        skos:broader    :belgian-french-ale ;
+        skos:narrower   :belgian-strong-dark-ale ;
+        skos:prefLabel  "Belgian dark ale" .
+
+:baltic-porter  a       skos:Concept ;
+        skos:broader    :lager , :stout-porter ;
+        skos:prefLabel  "Baltic porter" .
+
+:flanders-red-ale  a    skos:Concept ;
+        skos:broader    :belgian-french-ale ;
+        skos:prefLabel  "Flanders red ale" .
+
+:premium-bitter-esb  a  skos:Concept ;
+        skos:broader    :english-pale-ale-bitter ;
+        skos:prefLabel  "Premium bitter / ESB" .
+
+:altbier  a             skos:Concept ;
+        skos:broader    :lager , :german-ale ;
+        skos:prefLabel  "Altbier" .
+
+:ice-beer  a            skos:Concept ;
+        skos:broader    :american-adjunct-lager ;
+        skos:prefLabel  "Ice beer" .
+
+:quadrupel  a           skos:Concept ;
+        skos:broader    :belgian-strong-dark-ale ;
+        skos:prefLabel  "Quadrupel" .
+
+:american-dark-amber-lager
+        a               skos:Concept ;
+        skos:broader    :american-lager ;
+        skos:prefLabel  "American dark/amber lager" .
+
+:light-ale  a           skos:Concept ;
+        skos:broader    :english-pale-ale-bitter ;
+        skos:prefLabel  "Light ale" .
+
+:california-common  a   skos:Concept ;
+        skos:broader    :ale , :american-lager ;
+        skos:prefLabel  "California common" .
+
+:oatmeal-stout  a       skos:Concept ;
+        skos:broader    :stout-porter ;
+        skos:prefLabel  "Oatmeal stout" .
+
+:german-lager  a        skos:Concept ;
+        skos:broader    :lager ;
+        skos:narrower   :marzen , :kellerbier , :schwarzbier , :bock , :dortmunder , :munich-lager , :rauchbier , :vienna-lager ;
+        skos:prefLabel  "German lager" .
+
+:pale-ale  a            skos:Concept ;
+        skos:broader    :ale ;
+        skos:narrower   :india-pale-ale , :strong-pale-ale , :american-pale-ale , :english-pale-ale-bitter ;
+        skos:prefLabel  "Pale ale" .
+
+:eisbock  a             skos:Concept ;
+        skos:broader    :bock ;
+        skos:prefLabel  "Eisbock" .
+
+:english-pale-ale-bitter
+        a               skos:Concept ;
+        skos:broader    :pale-ale ;
+        skos:narrower   :burton-pale-ale , :light-ale , :premium-bitter-esb ;
+        skos:prefLabel  "English pale ale / bitter" .
+
+:dortmunder  a          skos:Concept ;
+        skos:broader    :german-lager ;
+        skos:prefLabel  "Dortmunder" .
+
+:bock   a               skos:Concept ;
+        skos:broader    :german-lager ;
+        skos:narrower   :maibock-helles , :doppelbock , :eisbock , :dunkler-bock ;
+        skos:prefLabel  "Bock" .
+
+:vienna-lager  a        skos:Concept ;
+        skos:broader    :german-lager ;
+        skos:prefLabel  "Vienna lager" .
+
+:wheat-wine  a          skos:Concept ;
+        skos:broader    :strong-pale-ale ;
+        skos:prefLabel  "Wheat wine" .
+
+:american-wild-ale  a   skos:Concept ;
+        skos:broader    :ale ;
+        skos:prefLabel  "American wild ale" .
+
+:bohemian-pilsner  a    skos:Concept ;
+        skos:broader    :pilsner ;
+        skos:prefLabel  "Bohemian pilsner" .
+
+:unblended  a           skos:Concept ;
+        skos:broader    :lambic ;
+        skos:prefLabel  "Unblended" .
+
+:cream-ale  a           skos:Concept ;
+        skos:broader    :lager , :ale ;
+        skos:prefLabel  "Cream ale" .
+
+:berliner-weisse  a     skos:Concept ;
+        skos:broader    :weissbier ;
+        skos:prefLabel  "Berliner weisse" .
+
+:saison  a              skos:Concept ;
+        skos:broader    :belgian-french-ale ;
+        skos:prefLabel  "Saison" .
+
+:european-pale-lager  a  skos:Concept ;
+        skos:broader    :european-lager ;
+        skos:prefLabel  "European pale lager" .
+
+:maibock-helles  a      skos:Concept ;
+        skos:broader    :bock ;
+        skos:prefLabel  "Maibock / helles" .
+
+:dubbel  a              skos:Concept ;
+        skos:broader    :belgian-strong-dark-ale ;
+        skos:prefLabel  "Dubbel" .
+
+:tripel  a              skos:Concept ;
+        skos:broader    :belgian-strong-pale-ale ;
+        skos:prefLabel  "Tripel" .
+
+:imperial-stout  a      skos:Concept ;
+        skos:broader    :stout-porter ;
+        skos:prefLabel  "Imperial stout" .
+
+:black-ipa  a           skos:Concept ;
+        skos:broader    :india-pale-ale ;
+        skos:prefLabel  "Black IPA" .
+
+:marzen  a              skos:Concept ;
+        skos:broader    :german-lager ;
+        skos:prefLabel  "Märzen" .
+
+:light-beer  a          skos:Concept ;
+        skos:broader    :american-adjunct-lager ;
+        skos:prefLabel  "Light beer" .
+
+:irish-stout  a         skos:Concept ;
+        skos:broader    :stout-porter ;
+        skos:narrower   :foreign-stout ;
+        skos:prefLabel  "Irish stout" .
+
+:mild-ale  a            skos:Concept ;
+        skos:broader    :ale ;
+        skos:prefLabel  "Mild ale" .
+
+:double-ipa  a          skos:Concept ;
+        skos:broader    :india-pale-ale , :strong-pale-ale ;
+        skos:prefLabel  "Double IPA" .
+
+:beer   a                  skos:Concept ;
+        skos:narrower      :ale , :lager ;
+        skos:prefLabel     "Beer" ;
+        skos:topConceptOf  :beer-styles .
+
+:american-adjunct-lager
+        a               skos:Concept ;
+        skos:broader    :american-lager ;
+        skos:narrower   :dry-beer , :malt-liquor , :american-pilsner , :light-beer , :ice-beer , :japanese-rice-lager ;
+        skos:prefLabel  "American adjunct lager" .
+
+:pilsner  a             skos:Concept ;
+        skos:broader    :lager ;
+        skos:narrower   :german-pilsner , :american-imperial-pilsner , :american-pilsner , :bohemian-pilsner ;
+        skos:prefLabel  "Pilsner" .
+
+:ale    a               skos:Concept ;
+        skos:broader    :beer ;
+        skos:narrower   :brown-ale , :american-wild-ale , :irish-ale , :cream-ale , :belgian-french-ale , :mild-ale , :pumpkin-ale , :stout-porter , :california-common , :lambic , :sahti , :german-ale , :pale-ale ;
+        skos:prefLabel  "Ale" .
+
+:flavored-stout  a      skos:Concept ;
+        skos:broader    :stout-porter ;
+        skos:prefLabel  "Flavored stout" .
+
+:belgian-strong-dark-ale
+        a               skos:Concept ;
+        skos:broader    :belgian-dark-ale ;
+        skos:narrower   :dubbel , :quadrupel ;
+        skos:prefLabel  "Belgian strong dark ale" .
+
+:gose   a               skos:Concept ;
+        skos:broader    :weissbier ;
+        skos:prefLabel  "Gose" .
+
+:european-lager  a      skos:Concept ;
+        skos:broader    :lager ;
+        skos:narrower   :european-strong-lager , :european-pale-lager ;
+        skos:prefLabel  "European lager" .
+
+:hefeweizen  a          skos:Concept ;
+        skos:broader    :weissbier ;
+        skos:prefLabel  "Hefeweizen" .
+
+:oud-bruin  a           skos:Concept ;
+        skos:broader    :belgian-french-ale ;
+        skos:prefLabel  "Oud bruin" .
+
+:burton-pale-ale  a     skos:Concept ;
+        skos:broader    :english-pale-ale-bitter ;
+        skos:prefLabel  "Burton pale ale" .
+
+:pumpkin-ale  a         skos:Concept ;
+        skos:broader    :ale ;
+        skos:prefLabel  "Pumpkin ale" .
+
+:english-porter  a      skos:Concept ;
+        skos:broader    :stout-porter ;
+        skos:prefLabel  "English porter" .
+
+:american-wheat-ale  a  skos:Concept ;
+        skos:broader    :american-pale-ale ;
+        skos:prefLabel  "American wheat ale" .
+
+:foreign-stout  a       skos:Concept ;
+        skos:broader    :irish-stout ;
+        skos:prefLabel  "Foreign stout" .
+
+:american-lager  a      skos:Concept ;
+        skos:broader    :lager ;
+        skos:narrower   :american-adjunct-lager , :american-dark-amber-lager , :california-common ;
+        skos:prefLabel  "American lager" .
+
+:doppelbock  a          skos:Concept ;
+        skos:broader    :bock ;
+        skos:prefLabel  "Doppelbock" .
+
+:kristallweizen  a      skos:Concept ;
+        skos:broader    :weissbier ;
+        skos:prefLabel  "Kristallweizen" .
+
+:old-ale  a             skos:Concept ;
+        skos:broader    :strong-pale-ale ;
+        skos:prefLabel  "Old ale" .
+
+:munich-dunkel  a       skos:Concept ;
+        skos:broader    :munich-lager ;
+        skos:prefLabel  "Munich dunkel" .
+
+:munich-helles  a       skos:Concept ;
+        skos:broader    :munich-lager ;
+        skos:prefLabel  "Munich helles" .
+
+:german-pilsner  a      skos:Concept ;
+        skos:broader    :pilsner ;
+        skos:prefLabel  "German pilsner" .
+
+:roggenbier  a          skos:Concept ;
+        skos:broader    :german-ale ;
+        skos:prefLabel  "Roggenbier" .
+
+:strong-pale-ale  a     skos:Concept ;
+        skos:broader    :pale-ale ;
+        skos:narrower   :wheat-wine , :old-ale , :scotch-ale , :double-ipa , :english-strong-ale , :barley-wine , :american-strong-ale ;
+        skos:prefLabel  "Strong pale ale" .
+
+:belgian-pale-ale  a    skos:Concept ;
+        skos:broader    :belgian-french-ale ;
+        skos:narrower   :belgian-strong-pale-ale ;
+        skos:prefLabel  "Belgian pale ale" .
+
+:kellerbier  a          skos:Concept ;
+        skos:broader    :german-lager ;
+        skos:prefLabel  "Kellerbier" .
+
+:winter-warmer  a       skos:Concept ;
+        skos:broader    :english-strong-ale ;
+        skos:prefLabel  "Winter warmer" .
+
+:lambic  a              skos:Concept ;
+        skos:broader    :ale ;
+        skos:narrower   :unblended , :geuze , :faro , :fruit ;
+        skos:prefLabel  "Lambic" .
+
+:schwarzbier  a         skos:Concept ;
+        skos:broader    :german-lager ;
+        skos:prefLabel  "Schwarzbier" .
+
+:dry-beer  a            skos:Concept ;
+        skos:broader    :american-adjunct-lager ;
+        skos:prefLabel  "Dry beer" .
+
+:fruit  a               skos:Concept ;
+        skos:broader    :lambic ;
+        skos:prefLabel  "Fruit" .
+
+:brown-ale  a           skos:Concept ;
+        skos:broader    :ale ;
+        skos:prefLabel  "Brown ale" .
+
+:faro   a               skos:Concept ;
+        skos:broader    :lambic ;
+        skos:prefLabel  "Faro" .
+
+:european-dark-lager  a  skos:Concept ;
+        skos:broader    :european-strong-lager ;
+        skos:prefLabel  "European dark lager" .
+
+:american-pale-ale  a   skos:Concept ;
+        skos:broader    :pale-ale ;
+        skos:narrower   :american-wheat-ale , :amber-ale , :blonde-ale ;
+        skos:prefLabel  "American pale ale" .
+
+:english-strong-ale  a  skos:Concept ;
+        skos:broader    :strong-pale-ale ;
+        skos:narrower   :winter-warmer ;
+        skos:prefLabel  "English strong ale" .
+
+:witbier  a             skos:Concept ;
+        skos:broader    :belgian-french-ale ;
+        skos:prefLabel  "Witbier" .
+
+:biere-de-champagne  a  skos:Concept ;
+        skos:broader    :belgian-french-ale ;
+        skos:prefLabel  "Bière de Champagne" .
+
+:barley-wine  a         skos:Concept ;
+        skos:broader    :strong-pale-ale ;
+        skos:prefLabel  "Barley wine" .
+
+:sahti  a               skos:Concept ;
+        skos:broader    :ale ;
+        skos:prefLabel  "Sahti" .
+
+:american-pilsner  a    skos:Concept ;
+        skos:broader    :pilsner , :american-adjunct-lager ;
+        skos:prefLabel  "American pilsner" .
+
+:scotch-ale  a          skos:Concept ;
+        skos:broader    :strong-pale-ale ;
+        skos:prefLabel  "Scotch ale" .
+
+:malt-liquor  a         skos:Concept ;
+        skos:broader    :american-adjunct-lager ;
+        skos:prefLabel  "Malt liquor" .
+
+:munich-lager  a        skos:Concept ;
+        skos:broader    :german-lager ;
+        skos:narrower   :munich-helles , :munich-dunkel ;
+        skos:prefLabel  "Munich lager" .
+
+:european-strong-lager
+        a               skos:Concept ;
+        skos:broader    :european-lager ;
+        skos:narrower   :european-dark-lager ;
+        skos:prefLabel  "European strong lager" .
+
+:belgian-strong-pale-ale
+        a               skos:Concept ;
+        skos:broader    :belgian-pale-ale ;
+        skos:narrower   :tripel ;
+        skos:prefLabel  "Belgian strong pale ale" .
+
+:dunkelweizen  a        skos:Concept ;
+        skos:broader    :weissbier ;
+        skos:prefLabel  "Dunkelweizen" .
+
+:dunkler-bock  a        skos:Concept ;
+        skos:broader    :bock ;
+        skos:prefLabel  "Dunkler bock" .
+
+:blonde-ale  a          skos:Concept ;
+        skos:broader    :american-pale-ale ;
+        skos:prefLabel  "Blonde ale" .
+
+:american-stout  a      skos:Concept ;
+        skos:broader    :stout-porter ;
+        skos:prefLabel  "American stout" .
+
+:american-strong-ale  a  skos:Concept ;
+        skos:broader    :strong-pale-ale ;
+        skos:prefLabel  "American strong ale" .
+
+:belgian-french-ale  a  skos:Concept ;
+        skos:broader    :ale ;
+        skos:narrower   :oud-bruin , :belgian-dark-ale , :saison , :witbier , :biere-de-champagne , :biere-de-garde , :flanders-red-ale , :belgian-pale-ale ;
+        skos:prefLabel  "Belgian/French ale" .
+
+:american-imperial-pilsner
+        a               skos:Concept ;
+        skos:broader    :pilsner ;
+        skos:prefLabel  "American imperial pilsner" .
+
+:japanese-rice-lager  a  skos:Concept ;
+        skos:broader    :american-adjunct-lager ;
+        skos:prefLabel  "Japanese rice lager" .
+
+:irish-ale  a           skos:Concept ;
+        skos:broader    :ale ;
+        skos:prefLabel  "Irish ale" .
+
+:rauchbier  a           skos:Concept ;
+        skos:broader    :german-lager ;
+        skos:prefLabel  "Rauchbier" .
+
+:biere-de-garde  a      skos:Concept ;
+        skos:broader    :belgian-french-ale ;
+        skos:prefLabel  "Bière de Garde" .
+
+:sweet-stout  a         skos:Concept ;
+        skos:broader    :stout-porter ;
+        skos:prefLabel  "Sweet stout" .
+
+:geuze  a               skos:Concept ;
+        skos:broader    :lambic ;
+        skos:prefLabel  "Geuze" .
+
+:weizenbock  a          skos:Concept ;
+        skos:broader    :weissbier ;
+        skos:prefLabel  "Weizenbock" .
+
+:kolsch  a              skos:Concept ;
+        skos:broader    :lager , :german-ale ;
+        skos:prefLabel  "Kölsch" .
